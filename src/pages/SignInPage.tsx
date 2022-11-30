@@ -8,9 +8,9 @@ const SignInPage = () => {
   return (
     <>
       <SEO
-        title="Netflix"
+        title="Data Router"
         description="Unlimited movies, TV shows, and more. Watch anywhere. Cancel anytime."
-        name="Netflix"
+        name="Data Router"
         type="section"
       />
       <SigninLayout />

@@ -21,15 +21,15 @@ const Navbar = () => {
       aria-label="navbar"
       className={`${
         isScrolled ? "shadow-lg" : ""
-      } z-40 fixed top-0 left-0 w-full`}
+      } z-40 fixed top-5 left-0 w-full`}
     >
       <div className="w-[89vw] max-w-screen-2xl mx-auto flex items-center justify-between">
         <Link to="/" onClick={() => setIsMobile(false)}>
           <img
-            src="/images/netflix-logo.svg"
+            src="/images/vite.svg"
             alt="logo"
-            width={150}
-            height={20}
+            width={45}
+            height={50}
             loading="lazy"
           />
         </Link>

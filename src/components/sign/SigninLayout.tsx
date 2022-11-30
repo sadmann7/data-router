@@ -9,7 +9,7 @@ const SigninLayout = () => {
         <h1 className="text-white text-2xl md:text-3xl font-bold">Sign In</h1>
         <SigninForm />
         <p className="mt-10 text-content text-sm md:text-base font-medium">
-          New to Netflix?{" "}
+          Don't have an account?{" "}
           <Link to="/signup" className="text-white">
             Sign up now
           </Link>

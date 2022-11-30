@@ -19,9 +19,9 @@ const HomePage = () => {
   return (
     <div className="py-20 min-h-screen bg-black text-white">
       <SEO
-        title="Netflix"
+        title="Data Router"
         description="Unlimited movies, TV shows, and more. Watch anywhere. Cancel anytime."
-        name="Netflix"
+        name="Data Router"
         type="section"
       />
       <div className="w-[89vw] max-w-screen-2xl mx-auto">HomePage</div>
