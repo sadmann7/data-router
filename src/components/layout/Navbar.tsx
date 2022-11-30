@@ -28,13 +28,13 @@ const Navbar = () => {
           <img
             src="/images/netflix-logo.svg"
             alt="logo"
-            width={125}
+            width={150}
             height={20}
             loading="lazy"
           />
         </Link>
-        <Link to="/login" aria-label="register">
-          <button className="bg-red-600 px-3 py-1 rounded-sm text-white text-sm md:text-base">
+        <Link to="/login" aria-label="authentication">
+          <button className="bg-accent px-3 py-1 rounded-sm text-white text-sm md:text-base">
             Sign In
           </button>
         </Link>

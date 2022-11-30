@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <footer
       aria-label="footer"
-      className="bg-black text-[#737373] border-t-8 border-t-[#222222]"
+      className="bg-black text-content border-t-8 border-t-[#222222]"
     >
       <div className="w-[75vw] max-w-screen-lg mx-auto py-10">
         <p className="text-sm md:text-base font-medium">
