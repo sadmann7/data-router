@@ -2,21 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const links = [
-  { lable: "FAQ", uri: "/" },
-  { lable: "Help Center", uri: "/" },
-  { lable: "Account", uri: "/" },
-  { lable: "Media Center", uri: "/" },
-  { lable: "Investor Relations", uri: "/" },
-  { lable: "Jobs", uri: "/" },
-  { lable: "Ways to Watch", uri: "/" },
-  { lable: "Terms of Use", uri: "/" },
-  { lable: "Privacy", uri: "/" },
-  { lable: "Cookie Preferences", uri: "/" },
-  { lable: "Corporate Information", uri: "/" },
-  { lable: "Contact Us", uri: "/" },
-  { lable: "Speed Test", uri: "/" },
-  { lable: "Legal Notices", uri: "/" },
-  { lable: "Only on Netflix", uri: "/" },
+  { lable: "FAQ", uri: "/", isExternal: false },
+  { lable: "Help Center", uri: "/", isExternal: false },
+  { lable: "Account", uri: "/", isExternal: false },
+  { lable: "Media Center", uri: "/", isExternal: false },
+  { lable: "Investor Relations", uri: "/", isExternal: false },
+  { lable: "Jobs", uri: "/", isExternal: false },
+  { lable: "Ways to Watch", uri: "/", isExternal: false },
+  { lable: "Terms of Use", uri: "/", isExternal: false },
+  { lable: "Privacy", uri: "/", isExternal: false },
+  { lable: "Cookie Preferences", uri: "/", isExternal: false },
+  { lable: "Corporate Information", uri: "/", isExternal: false },
+  { lable: "Contact Us", uri: "/", isExternal: false },
+  { lable: "Speed Test", uri: "https://fast.com/", isExternal: true },
+  { lable: "Legal Notices", uri: "/", isExternal: false },
+  { lable: "Only on Netflix", uri: "/", isExternal: false },
 ];
 
 const Footer = () => {
@@ -30,11 +30,17 @@ const Footer = () => {
           Questions? Contact us.
         </p>
         <div className="my-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-          {links.map((link, i) => (
-            <Link to={link.uri} key={i} className="text-xs md:text-sm">
-              {link.lable}
-            </Link>
-          ))}
+          {links.map((link, i) =>
+            link.isExternal ? (
+              <a key={i} className="text-xs md:text-sm" href={link.uri}>
+                {link.lable}
+              </a>
+            ) : (
+              <Link to={link.uri} key={i} className="text-xs md:text-sm">
+                {link.lable}
+              </Link>
+            )
+          )}
         </div>
         <Link to="/" className="text-xs md:text-sm">
           Netflix Bangladesh
