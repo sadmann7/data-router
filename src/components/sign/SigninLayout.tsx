@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 
 const SigninLayout = () => {
   return (
-    <div aria-label="login" className="pt-36 min-h-screen bg-black text-white">
+    <section
+      aria-label="login"
+      className="pt-36 min-h-screen bg-black text-white"
+    >
       <div className="w-[89vw] max-w-sm mx-auto">
         <h1 className="text-white text-2xl md:text-3xl font-bold">Sign In</h1>
         <SigninForm />
@@ -16,7 +19,7 @@ const SigninLayout = () => {
           .
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
